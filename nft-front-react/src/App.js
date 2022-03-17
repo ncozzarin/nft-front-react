@@ -170,6 +170,9 @@ const App = () => {
               Plant your seed.
             </button>
           )}
+          <a href='https://testnets.opensea.io/collection/argenft-v4'>
+          🌊 View Collection on OpenSea
+          </a>
         </div>
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
