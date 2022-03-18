@@ -151,7 +151,6 @@ export const TopSection = () => {
     }, [])
 
    return (
-    <div className="App">
     <div className="container">
       <div className="header-container">
         <p className="header gradient-text">Weedmaniac</p>
@@ -173,7 +172,6 @@ export const TopSection = () => {
         </a>
       </div>
     </div>
-  </div>
    );
 };
  
