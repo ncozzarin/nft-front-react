@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import myEpicNft from "../utils/MyEpicNFT.json";
-
+import { useNavigate } from 'react-router-dom'
 // Constants
 const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
@@ -10,7 +10,7 @@ const CONTRACT_ADDRESS = "0xf957e39CDE75D75FEA0952DF8044200a6eF34A97";
 
 
 export const TopSection = () => {
-
+  let navigate = useNavigate();
   /*
   * State variable we use to store our user's public wallet.
   */
@@ -164,12 +164,9 @@ export const TopSection = () => {
           renderNotConnectedContainer()
         ) : (
           <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
-            Plant your seedadasdasd.
+            Harvest!
           </button>
         )}
-        <a href='https://testnets.opensea.io/collection/argenft-v4'>
-        🌊 View Collection on OpenSea
-        </a>
       </div>
     </div>
    );
