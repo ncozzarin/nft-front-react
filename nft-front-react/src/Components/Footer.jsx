@@ -7,7 +7,7 @@ const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const Footer = () => {
 
     return (
-        <div className="container">
+        <div className="container-base">
         <div className="footer-container">
         <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
         <a

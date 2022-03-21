@@ -6,12 +6,11 @@ import React from "react";
 
  
    return (
-    <div className="container">
+    <div className="container-base">
       <div className="header-container">
-        <p className="header gradient-text">Weedmaniac</p>
-        
-        </div>
-        </div>
+        <p className="header gradient-text">Weedmaniac</p>    
+      </div>
+    </div>
 
    );
 };

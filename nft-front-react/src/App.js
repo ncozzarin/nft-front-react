@@ -14,13 +14,16 @@ const App = () => {
 
   return (
     <div className="App">
+      <div className='content-wrap'>
       <TopSection ></TopSection>
-      <Footer></Footer>
+      
       <Routes>
         <Route path="/" element={<Connect />} />
         <Route path="/home" element={<Home />} />
         <Route path="about" element={<About />} />
       </Routes>
+      </div>
+      <Footer></Footer>
     </div>
     
   );
