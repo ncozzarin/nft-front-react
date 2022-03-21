@@ -2,15 +2,16 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import myEpicNft from "../utils/MyEpicNFT.json";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router';
+
 // Constants
 const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
 const CONTRACT_ADDRESS = "0xf957e39CDE75D75FEA0952DF8044200a6eF34A97";
 
 
-export const TopSection = () => {
-  let navigate = useNavigate();
+ export default function TopSection() {
+  const navigate = useNavigate();
   /*
   * State variable we use to store our user's public wallet.
   */
@@ -44,6 +45,7 @@ export const TopSection = () => {
       // Setup listener! This is for the case where a user comes to our site
       // and ALREADY had their wallet connected + authorized.
       setupEventListener()
+      navigate("/AUTORIZADES");
     } else {
       console.log("No authorized account found");
     }
@@ -74,7 +76,8 @@ export const TopSection = () => {
 
       // Setup listener! This is for the case where a user comes to our site
       // and connected their wallet for the first time.
-      setupEventListener() 
+      setupEventListener()
+      navigate("/AUTORIZADES"); 
     } catch (error) {
       console.log(error);
     }
@@ -172,4 +175,3 @@ export const TopSection = () => {
    );
 };
  
-export default TopSection;
