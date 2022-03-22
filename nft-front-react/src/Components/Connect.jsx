@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import myEpicNft from "../utils/MyEpicNFT.json";
 import { useNavigate } from 'react-router';
+import TopSection from "./TopSection";
 
 // Constants
 const OPENSEA_LINK = '';
@@ -154,7 +155,9 @@ const CONTRACT_ADDRESS = "0xf957e39CDE75D75FEA0952DF8044200a6eF34A97";
     }, [])
 
    return (
-    <div className="container">
+
+    <div className="container-base">
+          <TopSection></TopSection>
       <div className="header-container">
         <p className="sub-text">
           Grow your own and unique NFT weed-plant. 
