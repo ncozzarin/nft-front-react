@@ -4,6 +4,7 @@ import { ethers } from "ethers";
 import myEpicNft from "../utils/MyEpicNFT.json";
 import { useNavigate } from 'react-router';
 import TopSection from "./TopSection";
+import Footer from "./Footer";
 
 // Constants
 const OPENSEA_LINK = '';
@@ -155,7 +156,8 @@ const CONTRACT_ADDRESS = "0xf957e39CDE75D75FEA0952DF8044200a6eF34A97";
     }, [])
 
    return (
-
+    <div className="App">
+      <div className='content-wrap'>
     <div className="container-base">
           <TopSection></TopSection>
       <div className="header-container">
@@ -172,6 +174,10 @@ const CONTRACT_ADDRESS = "0xf957e39CDE75D75FEA0952DF8044200a6eF34A97";
         )}
       </div>
     </div>
+    <Footer></Footer>
+    </div>
+    </div>
+
    );
 };
  
