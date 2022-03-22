@@ -6,6 +6,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from './Components/Home';
 import About from './Components/About';
 import Connect from './Components/Connect';
+import OutdoorHome from './Components/OutdoorHome';
 
 
 
@@ -15,12 +16,13 @@ const App = () => {
   return (
     <div className="App">
       <div className='content-wrap'>
-      <TopSection ></TopSection>
+
       
       <Routes>
         <Route path="/" element={<Connect />} />
         <Route path="/home" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="/courses/outdoor" element={<OutdoorHome />} />
       </Routes>
       </div>
       <Footer></Footer>

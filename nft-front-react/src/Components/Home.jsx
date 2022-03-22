@@ -2,11 +2,14 @@ import React from 'react';
 import "../styles/Home.css";
 import "../styles/output.css";
 import Cards from './Cards';
+import TopSection from './TopSection';
 // Constants
 
 const Home = () => {
 
     return (
+        <div>
+        <TopSection ></TopSection>
         <div className=' content-start bg-white	mx-auto p-8 mb-2'>
         <div>
             <div>
@@ -25,6 +28,7 @@ const Home = () => {
 
                 </div>
             </div>
+        </div>
         </div>
         </div>
 
