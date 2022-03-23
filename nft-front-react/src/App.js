@@ -14,8 +14,7 @@ import OutdoorHome from './Components/OutdoorHome';
 const App = () => {
 
   return (
-    <div className="App">
-      <div className='content-wrap'>
+
 
       
       <Routes>
@@ -24,9 +23,6 @@ const App = () => {
         <Route path="about" element={<About />} />
         <Route path="/courses/outdoor" element={<OutdoorHome />} />
       </Routes>
-      </div>
-      <Footer></Footer>
-    </div>
     
   );
 };
