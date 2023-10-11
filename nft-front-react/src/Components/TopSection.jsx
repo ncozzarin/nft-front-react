@@ -9,7 +9,7 @@ import "../styles/output.css";
    return (
     <div className="container-base">
       <div className="header-container">
-        <p className='text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-cyan-400 to-blue-400 font-sans '>Weedmaniac</p>    
+        <p className='text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-cyan-400 to-blue-400 font-sans '>NFtManiac</p>    
       </div>
     </div>
 
