@@ -2,7 +2,7 @@ import React from 'react';
 import twitterLogo from '../assets/twitter-logo.svg';
 import "../styles/App.css";
 // Constants
-const TWITTER_HANDLE = 'weedarg';
+const TWITTER_HANDLE = 'Niccozzarin';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const Footer = () => {
 
